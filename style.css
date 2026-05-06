@@ -1,0 +1,134 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0612;
+  --surface: #15111d;
+  --text: #e8dcc4;
+  --muted: #a89878;
+  --accent: #f4d35e;
+  --accent-dim: #c89b3c;
+  --border: rgba(201, 180, 137, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at top, #1a0d2e 0%, var(--bg) 60%, #000 100%);
+  color: var(--text);
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+h1 {
+  font-family: 'Cinzel', 'Trajan Pro', serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin: 0 0 8px;
+  text-shadow: 0 0 18px rgba(244, 211, 94, 0.25);
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  color: var(--accent-dim);
+  margin: 36px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin: 24px 0 8px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 14px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(244, 211, 94, 0.4);
+}
+
+a:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+.muted {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.last-updated {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 24px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.lang-switch {
+  margin: 0 0 32px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.lang-switch a {
+  color: var(--muted);
+  border-bottom-color: rgba(168, 152, 120, 0.35);
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+section {
+  margin-top: 28px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 6px 0;
+}
